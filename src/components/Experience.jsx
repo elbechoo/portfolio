@@ -2,8 +2,8 @@ import { useLanguage } from '../context/LanguageContext'
 
 const timeline = [
   { date: 'Feb 2026 — Jun 2026', company: 'INET · Sfax, Tunisia',                    titleKey: 'exp1Title', descKey: 'exp1Desc', tech: ['SQL Server 2022','Python 3.14','FastAPI','SQLAlchemy','Next.js','Power BI','Scikit-learn','BCrypt'], type: 'work' },
-  { date: '2025',                company: 'IEEE · AfroTech Intelligence Hackathon',   titleKey: 'exp2Title', descKey: 'exp2Desc', tech: ['Python','Machine Learning','Rapid Prototyping'],                                                       type: 'award' },
-  { date: '2023 — Present',      company: 'International School of Business · Sfax', titleKey: 'exp3Title', descKey: 'exp3Desc', tech: ['Power BI','Python','SQL','Data Warehousing','Machine Learning'],                                        type: 'edu' },
+  { date: 'Nov 2024',            company: 'IEEE · AfroTech Intelligence Hackathon',   titleKey: 'exp2Title', descKey: 'exp2Desc', tech: ['Python','Machine Learning','Rapid Prototyping'],                                                       type: 'award' },
+  { date: '2023 — 2026',         company: 'International School of Business · Sfax', titleKey: 'exp3Title', descKey: 'exp3Desc', tech: ['Power BI','Python','SQL','Data Warehousing','Machine Learning'],                                        type: 'edu' },
   { date: '2019 — 2023',         company: 'Lycée Monji Slim · Sfax',                 titleKey: 'exp4Title', descKey: 'exp4Desc', tech: [],                                                                                                       type: 'edu' },
 ]
 

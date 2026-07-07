@@ -1,18 +1,11 @@
 import { useLanguage } from '../context/LanguageContext'
 
 const certs = [
-  { title: 'Power BI — Data Analytics',              issuer: 'Klainer' },
-  { title: 'Microsoft Excel (Beginner to Advanced)', issuer: 'Udemy' },
-  { title: 'Python Bootcamp',                        issuer: 'Udemy' },
-  { title: 'Intro to Machine Learning',              issuer: 'Kaggle' },
-  { title: 'Career Skills in Data Analytics',        issuer: 'LinkedIn Learning' },
-  { title: 'Google Cloud Essentials',                issuer: 'Google Skills Boost' },
-  { title: 'IBM Big Data Fundamentals',              issuer: 'IBM' },
-  { title: 'Fundamentals of Deep Learning',          issuer: 'NVIDIA' },
-  { title: 'SQL for Data Analysis',                  issuer: 'Mode Analytics' },
-  { title: 'Data Visualization with Python',         issuer: 'Coursera' },
-  { title: 'Tableau for Beginners',                  issuer: 'Udemy' },
-  { title: 'Azure Data Fundamentals (DP-900)',        issuer: 'Microsoft', inProgress: true },
+  { title: 'AWS AI Practitioner',                 issuer: 'Udacity · AWS',            date: 'Nov 2025', url: 'https://drive.google.com/file/d/14M_gvy2Eg_qEXWq8JfxeVMp5GNLGrlF4/view' },
+  { title: 'Data Analysis with Python',           issuer: 'IBM · Cognitive Class',    date: 'Nov 2025', url: 'https://drive.google.com/file/d/1PPZ1-zltXWr5yNmbObTbMmnUs510vaWP/view' },
+  { title: 'Advanced SQL',                        issuer: 'Kaggle',                   date: 'Nov 2025', url: 'https://drive.google.com/file/d/1MrmKnVIVe93DGIX9cLZ9U0YRE8OctNbc/view' },
+  { title: 'Getting Started with Deep Learning',  issuer: 'NVIDIA',                   date: 'May 2026', url: 'https://drive.google.com/file/d/1FAm5p00UZQYjweFK24o1hGD7YyyjhI5s/view' },
+  { title: 'IELTS Academic — Band 5.5',           issuer: 'British Council · IDP',    date: 'Apr 2026', url: 'https://drive.google.com/file/d/1aUcVgsOr1BA5okuxbnx3YvmUnF5HyFiy/view' },
 ]
 
 export default function Certifications() {
@@ -24,11 +17,18 @@ export default function Certifications() {
         <h2 className="section-title">{t('certsTitle')}</h2>
         <div className="cert-grid">
           {certs.map((c, i) => (
-            <div key={i} className={`cert-card reveal reveal-delay-${(i % 4) + 1}`}>
+            <a
+              key={i}
+              href={c.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`cert-card reveal reveal-delay-${(i % 4) + 1}`}
+            >
               <h4 className="cert-card-title">{c.title}</h4>
               <span className="cert-card-issuer">{c.issuer}</span>
-              {c.inProgress && <span className="cert-card-status">· {t('certProgress')}</span>}
-            </div>
+              {c.date && <span className="cert-card-status">{c.date}</span>}
+              <span className="cert-card-view">View certificate →</span>
+            </a>
           ))}
         </div>
       </div>

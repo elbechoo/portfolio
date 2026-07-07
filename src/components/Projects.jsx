@@ -24,7 +24,7 @@ export default function Projects() {
           {projects.map((p, i) => (
             <div key={p.num} className={`project-card reveal reveal-delay-${(i % 2) + 1}`}>
               <div className="project-card-header">
-                <span className="project-card-num">// {p.num}</span>
+                <span className="project-card-num">{p.num}</span>
                 {p.status === 'progress'
                   ? <span className="badge badge-orange">{t('projectProgress')}</span>
                   : <span className="badge badge-lime">{t('projectLive')}</span>

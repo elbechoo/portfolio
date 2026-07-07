@@ -1,8 +1,8 @@
 import { useLanguage } from '../context/LanguageContext'
 
 const awards = [
-  { icon: '🥉', year: '2025', org: 'IEEE',     title: 'AfroTech Intelligence Hackathon', descKey: 'award1Desc' },
-  { icon: '🤖', year: '2025', org: 'IEEE RAS', title: 'Pyrabot IEEE Competition',        descKey: 'award2Desc' },
+  { icon: '🏆', year: '2024', org: 'IEEE',     title: 'AfroTech Intelligence Hackathon', descKey: 'award1Desc', place: null },
+  { icon: '🥉', year: '2025', org: 'IEEE RAS', title: 'Pyrabot IEEE Competition',        descKey: 'award2Desc', place: 'awardPlace' },
 ]
 
 export default function Awards() {
@@ -23,7 +23,7 @@ export default function Awards() {
               </div>
               <h3 className="award-title">{a.title}</h3>
               <p className="award-desc">{t(a.descKey)}</p>
-              <span className="badge badge-lime">{t('awardPlace')}</span>
+              {a.place && <span className="badge badge-lime">{t(a.place)}</span>}
             </div>
           ))}
         </div>

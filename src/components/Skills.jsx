@@ -20,11 +20,14 @@ const skillGroups = [
     { icon: '🗄️', name: 'SQL Server',   levelKey: 'skillAdvanced' },
     { icon: '🔗', name: 'SQLAlchemy',   levelKey: 'skillIntermediate' },
     { icon: '📦', name: 'T-SQL',        levelKey: 'skillAdvanced' },
+    { icon: '☁️', name: 'BigQuery',     levelKey: 'skillIntermediate' },
   ],
   [
     { icon: '⚛️', name: 'Next.js',      levelKey: 'skillIntermediate' },
     { icon: '🌐', name: 'React',        levelKey: 'skillIntermediate' },
+    { icon: '🔷', name: 'TypeScript',   levelKey: 'skillIntermediate' },
     { icon: '🔐', name: 'BCrypt / Auth',levelKey: 'skillIntermediate' },
+    { icon: '🤖', name: 'Claude API',   levelKey: 'skillIntermediate' },
     { icon: '🐙', name: 'Git',          levelKey: 'skillIntermediate' },
   ],
 ]

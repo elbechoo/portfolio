@@ -22,9 +22,8 @@ export default function About() {
 
   const langChips = [
     { lang: 'Arabic',  levelKey: 'langNative' },
-    { lang: 'French',  levelKey: 'langIntermediate' },
+    { lang: 'French',  levelKey: 'langUpperInt' },
     { lang: 'English', levelKey: 'langUpperInt' },
-    { lang: 'Italian', levelKey: 'langElementary' },
   ]
 
   const compKeys = ['comp1','comp2','comp3','comp4','comp5','comp6']
@@ -53,7 +52,7 @@ export default function About() {
 
           <div className="about-visual reveal reveal-delay-2">
             <div className="about-vis-card">
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--lime)', marginBottom: 20, letterSpacing: 2 }}>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--accent)', marginBottom: 20, letterSpacing: 2 }}>
                 {t('profTitle')}
               </p>
               {proficiencies.map((p, i) => (
@@ -82,8 +81,8 @@ export default function About() {
               </div>
             </div>
 
-            <div className="about-vis-card" style={{ borderColor: 'rgba(204,255,0,.12)', background: 'rgba(204,255,0,.03)' }}>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--lime)', marginBottom: 12, letterSpacing: 2 }}>
+            <div className="about-vis-card" style={{ borderColor: 'rgba(245,158,11,.12)', background: 'rgba(245,158,11,.03)' }}>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--accent)', marginBottom: 12, letterSpacing: 2 }}>
                 {t('compsTitle')}
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>

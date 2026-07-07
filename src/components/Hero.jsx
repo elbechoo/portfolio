@@ -5,6 +5,9 @@ export default function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-noise" />
+      <div className="hero-portrait reveal reveal-delay-2">
+        <img src="/profile.jpg" alt="Hachem Zenati" />
+      </div>
       <div className="container">
         <div className="hero-content">
 
@@ -36,7 +39,7 @@ export default function Hero() {
               >
                 {t('heroBtnProjects')}
               </button>
-              <a className="btn btn-outline" href="/cv.html" target="_blank" rel="noopener noreferrer">
+              <a className="btn btn-outline" href="/Hachem_Zenati_CV.pdf" download="Hachem_Zenati_CV.pdf" target="_blank" rel="noopener noreferrer">
                 {t('heroBtnCV')}
               </a>
             </div>
@@ -54,11 +57,11 @@ export default function Hero() {
 
             <div className="hero-stat-row">
               <div className="hero-stat">
-                <span className="hero-stat-num">3<span>+</span></span>
+                <span className="hero-stat-num">4<span>+</span></span>
                 <span className="hero-stat-label">{t('heroStatProjects')}</span>
               </div>
               <div className="hero-stat">
-                <span className="hero-stat-num">12<span>+</span></span>
+                <span className="hero-stat-num">5<span>+</span></span>
                 <span className="hero-stat-label">{t('heroStatCerts')}</span>
               </div>
               <div className="hero-stat">

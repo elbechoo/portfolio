@@ -3,7 +3,7 @@ import { useLanguage } from '../context/LanguageContext'
 const langs = [
   { code: 'en', flag: 'GB', label: 'EN' },
   { code: 'fr', flag: 'FR', label: 'FR' },
-  { code: 'it', flag: 'IT', label: 'IT' },
+  { code: 'ar', flag: 'AR', label: 'AR' },
 ]
 
 export default function LanguageSwitcher() {
