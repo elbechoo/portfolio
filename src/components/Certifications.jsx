@@ -5,7 +5,7 @@ const certs = [
   { title: 'Data Analysis with Python',           issuer: 'IBM · Cognitive Class',    date: 'Nov 2025', url: 'https://drive.google.com/file/d/1PPZ1-zltXWr5yNmbObTbMmnUs510vaWP/view' },
   { title: 'Advanced SQL',                        issuer: 'Kaggle',                   date: 'Nov 2025', url: 'https://drive.google.com/file/d/1MrmKnVIVe93DGIX9cLZ9U0YRE8OctNbc/view' },
   { title: 'Getting Started with Deep Learning',  issuer: 'NVIDIA',                   date: 'May 2026', url: 'https://drive.google.com/file/d/1FAm5p00UZQYjweFK24o1hGD7YyyjhI5s/view' },
-  { title: 'IELTS Academic — Band 5.5',           issuer: 'British Council · IDP',    date: 'Apr 2026', url: 'https://drive.google.com/file/d/1aUcVgsOr1BA5okuxbnx3YvmUnF5HyFiy/view' },
+  { title: 'IELTS Academic',           issuer: 'British Council · IDP',    date: 'Apr 2026', url: 'https://drive.google.com/file/d/1aUcVgsOr1BA5okuxbnx3YvmUnF5HyFiy/view' },
 ]
 
 export default function Certifications() {
