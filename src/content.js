@@ -13,7 +13,7 @@ const LINKS = {
 
 // Paste the Google Apps Script web app URL here (see automation/README.md).
 // While it is empty, the form falls back to opening a prefilled email.
-export const CONTACT_ENDPOINT = ''
+export const CONTACT_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwUMrkBfzc7ISxs5dv1z_TlMvRcYV90100Dtap94x00ybf0DCz8TxbmS1vgK0RBZ9GbwA/exec'
 
 const REPO = {
   f1: 'https://github.com/elbechoo/f1-analytics',
