@@ -57,11 +57,11 @@ export default function Hero() {
 
             <div className="hero-stat-row">
               <div className="hero-stat">
-                <span className="hero-stat-num">4<span>+</span></span>
+                <span className="hero-stat-num">3<span>+</span></span>
                 <span className="hero-stat-label">{t('heroStatProjects')}</span>
               </div>
               <div className="hero-stat">
-                <span className="hero-stat-num">5<span>+</span></span>
+                <span className="hero-stat-num">6<span>+</span></span>
                 <span className="hero-stat-label">{t('heroStatCerts')}</span>
               </div>
               <div className="hero-stat">

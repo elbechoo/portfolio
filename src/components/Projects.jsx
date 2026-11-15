@@ -7,10 +7,16 @@ const GithubIcon = () => (
 )
 
 const projects = [
-  { num: '01', titleKey: null, title: 'Retail Intelligence Platform',  descKey: 'proj1Desc', github: 'https://github.com/elbechoo/retail-intelligence-platform', status: 'live',     tech: ['Python','Pandas','Power BI','SQL Server','Scikit-learn'] },
-  { num: '02', titleKey: null, title: 'Football Analytics Engine',     descKey: 'proj2Desc', github: 'https://github.com/elbechoo/football-analytics-engine',       status: 'live',     tech: ['Python','Pandas','Scikit-learn','Matplotlib','BeautifulSoup'] },
-  { num: '03', titleKey: null, title: 'SmartDoc AI',                   descKey: 'proj3Desc', github: 'https://github.com/elbechoo/smartdoc-ai',                      status: 'live',     tech: ['Python','FastAPI','NLP','SQLAlchemy','React'] },
-  { num: '04', titleKey: null, title: 'AI Meeting Summarizer',         descKey: 'proj4Desc', github: 'https://github.com/elbechoo/meeting-summarizer',               status: 'live',     tech: ['Whisper API','FastAPI','React','Claude API','Python'] },
+  { num: '01', title: 'Apex Data \u00B7 F1 Analytics Warehouse', descKey: 'proj1Desc',
+    github: 'https://github.com/elbechoo/f1-analytics',
+    live:   'https://elbechoo.github.io/f1-analytics/',
+    status: 'live', tech: ['dbt','DuckDB','Python','SQL','GitHub Actions'] },
+  { num: '02', title: 'iNET RH \u00B7 HR Analytics Platform', descKey: 'proj2Desc',
+    github: 'https://github.com/elbechoo/inet-rh-analytics',
+    status: 'live', tech: ['dbt','PostgreSQL','Power BI','FastAPI','Scikit-learn'] },
+  { num: '03', title: 'Retail Intelligence Platform', descKey: 'proj3Desc',
+    github: 'https://github.com/elbechoo/retail-intelligence-platform',
+    status: 'live', tech: ['dbt','DuckDB','Power BI','TMDL/PBIR','Python'] },
 ]
 
 export default function Projects() {
@@ -39,6 +45,11 @@ export default function Projects() {
                 <a href={p.github} target="_blank" rel="noopener noreferrer" className="project-link">
                   <GithubIcon /> {t('projectGithub')}
                 </a>
+                {p.live && (
+                  <a href={p.live} target="_blank" rel="noopener noreferrer" className="project-link">
+                    &#8599; {t('projectLive')}
+                  </a>
+                )}
               </div>
             </div>
           ))}
